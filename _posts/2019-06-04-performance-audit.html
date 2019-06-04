@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Dev Tip: Chrome Dev Tool Performance Audit"
+date: 2019-06-04 12:00:00
+categories: howto
+---
+
+<p>Chrome Dev Tools provides many useful tools for web developers, but these tools can also be useful for non-developers too. Maybe you are a content editor and you upload images to a website. It would be nice to know you aren’t slowing down the site. This can be accomplished with tools already installed in your Chrome browser.</p>
+
+<ol>
+   <li>Use an incognito window to insure a clean testing environment</li>
+   <li>Navigate to a web page you want to run a performance scan on</li>
+   <li>Open Chrome Dev Tools by right clicking on the page and choosing Inspect from the pop-up menu</li>
+   <li>Click on the Audits tab and configure the following settings:
+       <ul>
+           <li>Device: Mobile</li>
+           <li>Audits: Performance</li>
+           <li>Throttling: Simulated Fast 3G, 4x CPU Slowdown</li>
+           <li>check Clear storage option</li>
+       </ul>
+   </li>
+   <li>Click “Run audits” button</li>
+   <li>After a few seconds you should get the results of your performance audit. To the right of the Performance heading you will get a performance score, the higher the score the better. If you plan on making performance improvements to your site, make note of the score so you have a baseline for your improvements</li>
+   <li>Scroll down to the “Opportunities” section of the audit results to view a list of suggestions to improve the performance of your site. </li>
+   <li>If “Properly size images” is listed in the results, you can click on the drop-down arrow to get a list of images that need to be optimized. </li>
+   <li>You should make one change at a time, then rerun the audit to see if your score went up</li>
+</ol>
