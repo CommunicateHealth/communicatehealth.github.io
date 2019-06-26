@@ -7,7 +7,7 @@ redirect_from:
   - /2017/03/browser-support/
 ---
 
-Use this post as a reference when setting up your [QC checklist](https://docs.google.com/spreadsheets/d/1VBdQEB1AHVX1WyGQzuE8-AWTzZfVcKkC9vSniK4gzWY/edit#gid=0). This post was last updated on **04/29/2019**.<!--Update whenever browser list is updates --> The most accurate list of supported browsers is [the CH specification of &gt; .5% in US and last 2 versions](https://browserl.ist/?q=%3E+.5%25+in+US+and+last+2+versions).
+Use this post as a reference when setting up your [QC checklist](https://communicatehealth.box.com/s/lemo7xpl0trs92sidi6qom38wk33nug6). This post was last updated on **04/29/2019**.<!--Update whenever browser list is updates --> The most accurate list of supported browsers is [the CH specification of &gt; .5% in US and last 2 versions](https://browserl.ist/?q=%3E+.5%25+in+US+and+last+2+versions).
 
 QC the website in BrowserStack on the following operating systems and browsers (unless otherwise indicated by Dev).
 
