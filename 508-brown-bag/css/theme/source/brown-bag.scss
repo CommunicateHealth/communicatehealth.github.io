@@ -1,0 +1,95 @@
+/**
+ * Specific styles for QC Brown Bag
+ *
+ * Based on: White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+$purple-fallback: rgb(101,66,105);
+$purple: rgba(101,66,105,1);
+$teal: rgba(26,172,158,1);
+$green: rgba(123,191,75,1);
+$orange: rgba(237,117,47,1);
+$gray: rgba(93,93,93,1);
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Custom styles for QC Brown Bag
+body {
+  background: linear-gradient(to right,  $purple 0%,$purple 20%,$teal 20%,$teal 40%,$green 40%,$green 60%,$orange 60%,$orange 80%,$gray 80%,$gray 100%);
+}
+
+.reveal {
+  background: $backgroundColor;
+  margin-top: 0.25em;
+
+  .backgrounds {
+    background-image: url(../../img/CH-logo.png);
+    background-repeat: no-repeat;
+    background-position: bottom .5em left .5em;
+  }
+
+  .float-left {
+    float: left;
+    max-width: 48%;
+  }
+
+  .float-right {
+    float: right;
+    max-width: 48%;
+  }
+
+  .indent {
+    margin-left: 4em;
+  }
+
+  table th,
+  table td {
+    border-bottom: 0;
+    border-right: 1px solid;
+
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+}

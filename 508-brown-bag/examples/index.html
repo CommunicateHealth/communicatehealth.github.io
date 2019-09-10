@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<ul class="skip-links">
+  <li><a href="#top">Skip to content</a></li>
+</ul>
+
+<h1>Examples of 508 considerations</h1>
+
+<ul>
+  <li><a href="#focus">Hover and focus states</a></li>
+  <li><a href="#contrast">Color contrast</a></li>
+  <li><a href="#input">Form element labels</a></li>
+  <li><a href="#label">Giving links more context</a></li>
+</ul>
+
+<section id="content">
+  <h2 id="focus">Hover and focus states</h2>
+
+  <p>This button has a specific hover style but no focus style:</p>
+  <a href="#" class="btn btn-nofocus">Begin the course</a>
+
+  <p>This button has a specific hover style and a specific focus style:</p>
+  <a href="#" class="btn btn-focus">Begin the course</a>
+</section>
+
+<section>
+  <h2 id="contrast">Color contrast</h2>
+
+  <p class="contrast contrast-1"><strong>Fail - 1.9:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-2"><strong>Fail - 3.5:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-3"><strong>Pass - 4.7:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-4"><strong>Pass - 9.7:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-dark contrast-8"><strong>Fail - 1.6:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-dark contrast-7"><strong>Fail - 3.4:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-dark contrast-6"><strong>Pass - 4.5:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+  <p class="contrast contrast-dark contrast-5"><strong>Pass - 8.3:1</strong> Unde maiores dignissimos repellendus sed aspernatur. Veritatis minima ut velit voluptatum recusandae repudiandae. Labore voluptatibus aspernatur aperiam officia adipisci doloribus eius dicta. Nesciunt iure quisquam molestias. Aperiam aut consectetur incidunt cum facilis ipsam a.</p>
+
+</section>
+
+<section>
+  <h2 id="input">Form element labels</h2>
+  <p>No label, relying on placeholder text</p>
+  <p class="space-bottom"><input type="text" placeholder="First name"></p>
+  <p>Visual label, not linked to field</p>
+  <p class="space-bottom">First name<br><input type="text"></p>
+  <p>Label and linked to field</p>
+  <p class="space-bottom"><label for="firstname">First name</label><br><input id="firstname" type="text"></p>
+</section>
+
+<section>
+  <h2 id="label">Giving links more context</h2>
+  <p>The following footnote link will read as <strong>"link, 4"</strong>.<sup><a href="#">4</a></sup></p>
+  <p>This footnote link will read as <strong>"link, footnote 4"</strong>.<sup><a href="#" aria-label="footnote 4">4</a></sup></p>
+</section>
+
+</body>
+</html>
