@@ -24,6 +24,6 @@ We support the latest official/stable release for:
 
 ## Operating Systems
   * Windows — last 2 versions, see [Windows mainstream support tables](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet):
-  * macOS — last 2 versions, see [macOS release history table]](https://en.wikipedia.org/wiki/MacOS#Release_history)
+  * macOS — last 2 versions, see [macOS release history table](https://en.wikipedia.org/wiki/MacOS#Release_history)
   * iOS — last 2 versions see [iOS release history table](https://en.wikipedia.org/wiki/IOS_version_history#Overview)
   * Android — last 2 versions, see [Android release history table](https://en.wikipedia.org/wiki/Android_version_history#Overview)
